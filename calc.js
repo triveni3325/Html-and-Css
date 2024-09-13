@@ -8,7 +8,6 @@ function operator(value) {
 }
  
 function calc() {
-    // let resultField = document.getElementById('result');
     result.value = eval(result.value);
 }
 
