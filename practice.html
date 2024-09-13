@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful website layout</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        body{
+            background: url(butterfly.webp);
+            background-size: cover;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+        .container1{
+            width: 100%;
+            height: 60px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+        }
+        nav{
+            margin: 0 30px;
+        }
+        ul{
+            list-style: none;
+            margin: 20px;
+            font-size: 20px;
+        }
+        li{
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .inp{
+            position: absolute;
+            right: 5px;
+        }
+        .input{
+            height: 45px;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        .text{
+            padding-left: 5px;
+            margin-right: 10px;
+            outline: 1px solid rgb(0, 21, 255);
+        }
+        .submit{
+            width: 100px;
+            margin-right: 50px;
+            background: black;
+            color: green;
+            border: 1 px solid green;
+
+        }
+        .container2{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .log-button{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .login{
+            color: white;
+            background: rgba(0,120,0,0.80);
+        }
+        .register{
+            color: white;
+            background: rgba(0,120,0,0.80);
+        }
+        @media  (max-width:500px) {
+            nav{
+                color: chartreuse;
+            }
+        }
+    </style>
+   
+</head>
+<body>
+   <div class="container1 flex">
+    
+      <nav class="flex">
+        <h1>Butterfly</h1>
+        <ul class="flex">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+        <div class="inp">
+            <input type="text" placeholder="search" class="input text">
+            <input type="submit" value="search" class="input submit">
+        </div>
+      </nav>
+      <div class="container2 flex">
+       <a href="register" class="log-button login" >LOGIN</a>
+       <a href="login" class="log-button register">REGISTER</a>
+        
+      </div>
+
+
+   </div>
+    
+</body>
+</html>
