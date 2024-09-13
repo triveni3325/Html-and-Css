@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Calibri,sans-serif;
+            background-image:url(123.webp);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+        }
+     .container {
+      width: 350px; 
+      height:450px;
+      background-color:lavenderblush;
+      margin: 0 auto; 
+      border-radius:10px;
+      box-shadow:0 0 10px gray;
+      margin-top:100px;
+      border-radius:20px;
+      padding:10px;
+    }
+    
+    .form-group {
+      text-align: left;
+    }
+    
+    
+    .input-field {
+      width: 300px; 
+      padding: 8px; 
+      border:1px solid gray;
+      border-radius:5px;
+      margin: 5px; 
+    
+    }
+    
+    #Button1{
+        padding:10px;
+        margin-top:20px;
+        border:none;
+        border-radius:10px;
+        background-color:blue;
+        color:white;
+        width:100px;
+    
+    }
+    #Button1:hover{
+        background-color:white;
+        color:darkgrey;
+    }
+    
+    </style>
+</head>
+<body>
+   
+    
+    </head>
+    <body> 
+        <center>
+         <div class="container">
+            <h2>Registration form</h2>
+            <form id="form1" runat="server">
+              <div class="form-group">
+                <label for="fullname">FullName:</label><br />
+                <input type="text" id="fullname" class="input-field" /><br />
+                  <br >
+              </div>
+              <div class="form-group">
+                <label for="username" >UserName:</label><br />
+                <input type="text" id="username" class="input-field" /><br /><br />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label><br />
+                <input type="text" id="email" class="input-field" /><br /><br />
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label><br />
+                <input type="text" id="password" class="input-field" /><br /><br />
+              </div>
+              <button type="button" id="Button1">register</button>
+    
+            </form>
+          </div>
+        </center>
+</body>
+</html>
