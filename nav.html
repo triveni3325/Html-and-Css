@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Responsive navbar</title>
+</head>
+<body>
+    <header>
+        <div class="navbar"> 
+            <div class="logo"><a href="#">WELCOME TO MY WEBPAGE</a></div>
+         <ul class="links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT </a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">CONTACT</a></li>
+         </ul>
+         <a href="#" class="action_bar">Getstarted</a>
+         <div class="icon_bars">
+            <i class="fa fa-bars"></i>
+         </div>   
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="hero">HOME</a></li>
+            <li><a href="about">ABOUT </a></li>
+            <li><a href="services">SERVICE</a></li>
+            <li><a href="contact">CONTACT</a></li>
+           <li> <a href="#" class="action_bar">Getstarted</a></li>
+
+        </div>
+
+     
+
+
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+        }
+
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    </script>
+    
+</body>
+</html> 
+
